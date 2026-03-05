@@ -8,6 +8,8 @@ Instead of using an accelerometer (which is present in MacOS), this version dete
 
 Making this thing took me like 12-13 hours, with a lot of trial and testing, so I hope you enjoy using this and give me proper feedback as well :D
 
+https://github.com/user-attachments/assets/5964abaa-ee9a-4aaf-853c-9984433d8a08
+
 ## Features
 
 - Detects impacts using microphone input

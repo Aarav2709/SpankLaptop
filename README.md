@@ -1,4 +1,11 @@
 # SpankLaptop
+
+<p align="center">
+  <a href="https://crates.io/crates/SpankLaptop">
+    <img alt="crates.io downloads" src="https://img.shields.io/crates/d/SpankLaptop?label=crates.io%20downloads">
+  </a>
+</p>
+
 Hit your laptop. It yells back.
 
 SpankLaptop is a Rust rewrite (for windows and linux ofc) inspired by
@@ -20,16 +27,10 @@ https://github.com/user-attachments/assets/5964abaa-ee9a-4aaf-853c-9984433d8a08
 
 ## Installation
 
-Install directly from GitHub:
+Install from crates.io:
 
 ```bash
-cargo install --git https://github.com/Aarav2709/SpankLaptop spanklaptop
-```
-
-Or (after this crate is published), install from crates.io:
-
-```bash
-cargo install spanklaptop
+cargo install SpankLaptop
 ```
 
 Then run:
@@ -41,7 +42,7 @@ spanklaptop
 To update later:
 
 ```bash
-cargo install spanklaptop --force
+cargo install SpankLaptop --force
 ```
 
 ## Usage

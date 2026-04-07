@@ -1,6 +1,6 @@
 [package]
 name = "SpankLaptop"
-version = "1.1.0"
+version = "1.1.1"
 edition = "2024"
 description = "Hit your laptop. It yells back."
 license = "MIT"

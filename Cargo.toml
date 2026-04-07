@@ -2,12 +2,19 @@
 name = "spanklaptop"
 version = "0.1.0"
 edition = "2024"
+description = "Hit your laptop. It yells back."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Aarav2709/SpankLaptop"
+keywords = ["audio", "cli", "fun"]
+categories = ["command-line-utilities", "multimedia::audio"]
 
 [dependencies]
 cpal = "0.15"
 rodio = "0.17"
 rand = "0.8"
 anyhow = "1"
+include_dir = "0.7"
 
 ratatui = "0.26"
 crossterm = "0.27"

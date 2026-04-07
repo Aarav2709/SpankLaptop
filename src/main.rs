@@ -52,10 +52,10 @@ fn main() {
 
     println!("{}", "Press Ctrl+C to stop\n".yellow());
 
-    let sounds = audio::load(&format!("audio/{}", mode))
+    let sounds = audio::load(&mode)
         .expect("Failed to load audio files");
 
-    let threshold = Arc::new(Mutex::new(0.6)); // Adjust this, works as senstivity.
+    let threshold = Arc::new(Mutex::new(0.3)); // Lower default to improve trigger reliability.
 
     let state = Arc::new(Mutex::new(DetectorState {
         impact_level: 0.0,

@@ -20,18 +20,28 @@ https://github.com/user-attachments/assets/5964abaa-ee9a-4aaf-853c-9984433d8a08
 
 ## Installation
 
-Clone the repository and build with Cargo.
+Install directly from GitHub:
 
 ```bash
-git clone https://github.com/Aarav2709/SpankLaptop
-cd SpankLaptop
-cargo build --release
+cargo install --git https://github.com/Aarav2709/SpankLaptop spanklaptop
 ```
 
-Run the compiled binary:
+Or (after this crate is published), install from crates.io:
 
 ```bash
-./target/release/spanklaptop
+cargo install spanklaptop
+```
+
+Then run:
+
+```bash
+spanklaptop
+```
+
+To update later:
+
+```bash
+cargo install spanklaptop --force
 ```
 
 ## Usage

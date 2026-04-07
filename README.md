@@ -1,11 +1,5 @@
 # SpankLaptop
 
-<p align="center">
-  <a href="https://crates.io/crates/SpankLaptop">
-    <img alt="crates.io downloads" src="https://img.shields.io/crates/d/SpankLaptop?label=crates.io%20downloads">
-  </a>
-</p>
-
 Hit your laptop. It yells back.
 
 SpankLaptop is a Rust rewrite (for windows and linux ofc) inspired by

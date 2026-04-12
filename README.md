@@ -2,7 +2,8 @@
 
 Hit your laptop. It yells back.
 
-SpankLaptop is a Rust rewrite (for windows and linux ofc) inspired by
+SpankLaptop is a Rust rewrite (for windows and linux ofc) inspired by:
+
 https://github.com/taigrr/spank!
 
 Instead of using an accelerometer (which is present in MacOS), this version detects impacts through microphone vibration and plays a random sound in response.

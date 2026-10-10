@@ -8,7 +8,7 @@ It listens for impacts through your microphone, and through the accelerometer on
 Making this thing took me like 12-13 hours, with a lot of trial and testing, so I hope you enjoy using this and give me proper feedback as well :D
 
 https://github.com/user-attachments/assets/5964abaa-ee9a-4aaf-853c-9984433d8a08
--# I'm not going to lie, this is super duper old, and I'm lazy to show the new one to you, so just check it out yourself <3
+> I'm not going to lie, this is super duper old, and I'm lazy to show the new one to you, so just check it out yourself <3
 
 ## Features
 

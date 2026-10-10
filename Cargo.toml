@@ -1,6 +1,6 @@
 [package]
 name = "SpankLaptop"
-version = "1.1.1"
+version = "2.0.0"
 edition = "2024"
 description = "Hit your laptop. It yells back."
 license = "MIT"
@@ -8,6 +8,7 @@ readme = "README.md"
 repository = "https://github.com/Aarav2709/SpankLaptop"
 keywords = ["audio", "cli", "fun"]
 categories = ["command-line-utilities", "multimedia::audio"]
+exclude = ["funniRecording.mp4"]
 
 [dependencies]
 cpal = "0.15"
@@ -15,8 +16,27 @@ rodio = "0.17"
 rand = "0.8"
 anyhow = "1"
 include_dir = "0.7"
-
-ratatui = "0.26"
-crossterm = "0.27"
 colored = "3"
-chrono = "0.4"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+serde = { version = "1", features = ["derive"] }
+toml = "1"
+ratatui = { version = "0.30", default-features = false, features = ["crossterm"] }
+
+[target.'cfg(windows)'.dependencies]
+tray-icon = { version = "0.26", optional = true }
+windows = { version = "0.62", optional = true, features = ["Devices_Sensors", "Foundation"] }
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Console", "Win32_System_Registry", "Win32_UI_WindowsAndMessaging"] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+ksni = { version = "0.3", optional = true, default-features = false, features = ["blocking", "async-io"] }
+
+[features]
+default = ["tray", "accel"]
+tray = ["dep:tray-icon", "dep:ksni"]
+accel = ["dep:windows"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
